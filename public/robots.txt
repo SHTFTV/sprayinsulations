@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://performancesprayinsulation.ca/sitemap.xml
+Sitemap: https://performancesprayinsulation.ca/sitemap-vancouver.xml
