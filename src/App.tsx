@@ -51,6 +51,7 @@ import { CostGuideView } from './components/CostGuideView';
 import { ContractorsDirectoryView } from './components/ContractorsDirectoryView';
 import { CanadaProvincesHubView } from './components/CanadaProvincesHubView';
 import { ResourcesHubView } from './components/ResourcesHubView';
+import { IndexingShareSection } from './components/IndexingShareSection';
 
 export function App() {
   const [currentView, setCurrentView] = useState<ViewMode>('home');
@@ -585,6 +586,9 @@ export function App() {
       <main className="flex-grow">
         {renderCurrentView()}
       </main>
+
+      {/* AEO indexing + share (Preferred Source, Pin, WhatsApp) */}
+      <IndexingShareSection />
 
       {/* Corporate Division Footer */}
       <Footer
