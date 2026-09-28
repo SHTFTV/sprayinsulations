@@ -1,6 +1,20 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "vite",
-  "buildCommand": "vite build",
-  "outputDirectory": "dist"
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "release",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/vancouver",
+      "destination": "/cities/vancouver/",
+      "permanent": true
+    },
+    {
+      "source": "/vancouver.html",
+      "destination": "/cities/vancouver/",
+      "permanent": true
+    }
+  ]
 }
