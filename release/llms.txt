@@ -1,0 +1,23 @@
+# Spray Insulations
+Independent insulation planning and credited material imagery.
+## Expertise
+Insulation project briefs, attic and crawl-space planning, spray foam, Monoglass, HiBar and commercial-work archive context.
+## Trust Signals
+Images have source credits and factual captions. General enquiries: build@buildershaus.com. Product performance and installer identity require records; photographs alone do not establish them.
+## Parent Organization
+Industry Army Marketing — Est. May 13, 2015. https://industryarmymarketing.com/
+## Service Areas / Coverage
+Canadian planning information. Lower Mainland city pages preserve their explicitly assigned contractor contacts. No universal contractor availability is implied.
+## Frequently Asked Questions
+Where are the material photos? /legacy/ links to the individual pages.
+Where are the foam photos? /projects/ retains the photographs and video.
+Is HiBar imagery a customer project? The HiBar material page uses credited SOPREMA manufacturer imagery.
+Is every page a contractor offer? No; contractor assignments appear explicitly on city pages.
+Does an enquiry automatically send? The contact page prepares an email draft; delivery is not verified.
+## Crawler Directives
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /config/
+Sitemap: https://sprayinsulations.ca/sitemap.xml

@@ -355,8 +355,32 @@
   },
   {
     "page": "projects/index.html",
-    "image": "/images/wesprayit-attic-work-area.jpg",
-    "caption": "The archive shows foam between timber roof framing and beneath an exposed floor. Use these views to understand the work areas before reviewing the individual photographs and application video. Source: WeSprayIt.ca. Product, installer and project location are not independently confirmed.",
-    "source": "WeSprayIt.ca"
+    "image": "/images/legacy/monoglass-overhead.jpg",
+    "caption": "Monoglass, HiBar and commercial work are shown with distinct source records and links to the matching pages.",
+    "source": "WeSprayIt.ca, SOPREMA and IndustrialCoatings.co archives"
+  },
+  {
+    "page": "services/monoglass-insulation/index.html",
+    "image": "/images/legacy/monoglass-overhead.jpg",
+    "caption": "The photograph associated with Monoglass in the original WeSprayIt service section shows overhead fibre insulation above pipework. The earlier white annotation was removed with AI-assisted cleanup; the source original is retained.",
+    "source": "WeSprayIt.ca archive"
+  },
+  {
+    "page": "services/hibar-fireproofing/index.html",
+    "image": "/images/legacy/hibar-soprema.jpg",
+    "caption": "SOPREMA identifies this image in its HiBAR product gallery. It shows the overhead finish across decking and open steel framing; it is manufacturer imagery, not a claimed Spray Insulations customer project.",
+    "source": "SOPREMA HiBAR product gallery"
+  },
+  {
+    "page": "services/industrial-coatings-legacy/index.html",
+    "image": "/images/legacy/commercial-overhead-work.jpg",
+    "caption": "Recovered commercial job-site photography shows two scissor lifts and overhead access. The available archive does not identify the coating product, contractor or project location.",
+    "source": "IndustrialCoatings.co project archive"
+  },
+  {
+    "page": "legacy/index.html",
+    "image": "/images/legacy/monoglass-overhead.jpg",
+    "caption": "Recovered Monoglass overhead image introduces the separate material and source records in this collection.",
+    "source": "WeSprayIt.ca archive"
   }
 ]

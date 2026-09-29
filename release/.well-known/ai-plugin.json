@@ -1,0 +1,12 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Spray Insulations",
+  "name_for_model": "spray_insulations",
+  "description_for_human": "Insulation planning and credited legacy imagery.",
+  "description_for_model": "Read public planning pages and credited image sources. This site does not provide a callable enquiry or booking API. Preserve explicit contractor contacts on city pages.",
+  "auth": {
+    "type": "none"
+  },
+  "logo_url": "https://sprayinsulations.ca/favicon.svg",
+  "contact_email": "build@buildershaus.com"
+}
