@@ -610,7 +610,7 @@ export function App() {
       <GetHelpModal
         isOpen={isGetHelpOpen}
         onClose={() => setIsGetHelpOpen(false)}
-        onSubmitLead={handleSaveLead}
+        onSaveInquiry={handleSaveLead}
       />
 
       {/* Global Toast Notification System */}
