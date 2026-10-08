@@ -61,10 +61,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   <Mail className="w-3.5 h-3.5 text-amber-400 shrink-0" />
                   <span>Primary Inquiries:</span>
                   <a 
-                    href="mailto:build@buildershuas.com" 
+                    href="mailto:build@buildershaus.com"
                     className="text-amber-400 hover:text-amber-300 font-medium hover:underline"
                   >
-                    build@buildershuas.com
+                    build@buildershaus.com
                   </a>
                 </p>
               </div>
@@ -75,10 +75,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <Mail className="w-4 h-4 text-amber-400" />
               <span>Primary Inquiries:</span>
               <a 
-                href="mailto:build@buildershuas.com"
+                href="mailto:build@buildershaus.com"
                 className="text-amber-400 hover:text-amber-300 font-medium hover:underline"
               >
-                build@buildershuas.com
+                build@buildershaus.com
               </a>
             </div>
             <p className="text-[11px] text-slate-400 italic">
@@ -328,8 +328,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <span className="hidden sm:inline">•</span>
             <div className="flex items-center gap-1.5">
               <span>Primary Inquiries:</span>
-              <a href="mailto:build@buildershuas.com" className="text-amber-400 hover:text-amber-300 font-medium hover:underline">
-                build@buildershuas.com
+              <a href="mailto:build@buildershaus.com" className="text-amber-400 hover:text-amber-300 font-medium hover:underline">
+                build@buildershaus.com
               </a>
             </div>
           </div>

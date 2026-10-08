@@ -214,7 +214,7 @@ export function App() {
     addToast(
       'success',
       'Inquiry Dispatched Successfully!',
-      `Thank you ${newLead.fullName}. Your ${newLead.serviceNeeded || newLead.serviceCategory || 'insulation'} project in ${newLead.city ? `${newLead.city}, ` : ''}${newLead.province} has been logged and dispatched to build@buildershuas.com.`
+      `Thank you ${newLead.fullName}. Your ${newLead.serviceNeeded || newLead.serviceCategory || 'insulation'} project in ${newLead.city ? `${newLead.city}, ` : ''}${newLead.province} has been logged and dispatched to build@buildershaus.com.`
     );
   };
 

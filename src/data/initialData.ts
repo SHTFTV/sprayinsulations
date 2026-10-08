@@ -4,7 +4,7 @@ import { ALL_INSULATION_SERVICES, SERVICE_CATEGORIES, findServiceBySlug, getServ
 export { ALL_INSULATION_SERVICES, SERVICE_CATEGORIES, findServiceBySlug, getServiceOrDefault };
 export const INSULATION_SERVICES: InsulationService[] = ALL_INSULATION_SERVICES;
 
-export const PRIMARY_CONTACT_EMAIL = 'build@buildershuas.com';
+export const PRIMARY_CONTACT_EMAIL = 'build@buildershaus.com';
 
 export const BRAND_INFO = {
   name: 'SprayInsulations.ca',
