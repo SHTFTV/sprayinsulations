@@ -27,7 +27,7 @@ export const CANADIAN_CONTRACTORS: ContractorProfile[] = [
       status: 'Verified Business'
     },
     phone: '(778) 779-4353',
-    email: 'build@buildershuas.com',
+    email: 'build@buildershaus.com',
     website: 'https://sprayinsulations.ca',
     address: '4214B Miller St',
     city: 'Vancouver',
@@ -139,7 +139,7 @@ export const CANADIAN_CONTRACTORS: ContractorProfile[] = [
       status: 'Verified Business'
     },
     phone: '(403) 555-0184',
-    email: 'build@buildershuas.com',
+    email: 'build@buildershaus.com',
     website: 'https://sprayinsulations.ca/contractors/arctic-shield-insulation',
     address: '1120 44 Ave SE',
     city: 'Calgary',
@@ -222,7 +222,7 @@ export const CANADIAN_CONTRACTORS: ContractorProfile[] = [
       status: 'Verified Business'
     },
     phone: '(416) 555-0199',
-    email: 'build@buildershuas.com',
+    email: 'build@buildershaus.com',
     website: 'https://sprayinsulations.ca/contractors/ontario-envelope-specialists',
     address: '350 Evans Ave',
     city: 'Toronto',
@@ -293,7 +293,7 @@ export const CANADIAN_CONTRACTORS: ContractorProfile[] = [
       status: 'Verified Business'
     },
     phone: '(613) 555-0177',
-    email: 'build@buildershuas.com',
+    email: 'build@buildershaus.com',
     website: 'https://sprayinsulations.ca/contractors/capital-thermal-ottawa',
     address: '1550 Cyrville Rd',
     city: 'Ottawa',
@@ -341,7 +341,7 @@ export const CANADIAN_CONTRACTORS: ContractorProfile[] = [
       status: 'Verified Business'
     },
     phone: '(514) 555-0163',
-    email: 'build@buildershuas.com',
+    email: 'build@buildershaus.com',
     website: 'https://sprayinsulations.ca/contractors/isolation-eco-perform-montreal',
     address: '7250 Boulevard Saint-Laurent',
     city: 'Montreal',
@@ -389,7 +389,7 @@ export const CANADIAN_CONTRACTORS: ContractorProfile[] = [
       status: 'Verified Business'
     },
     phone: '(902) 555-0144',
-    email: 'build@buildershuas.com',
+    email: 'build@buildershaus.com',
     website: 'https://sprayinsulations.ca/contractors/atlantic-thermal-halifax',
     address: '120 Chain Lake Dr',
     city: 'Halifax',
@@ -437,7 +437,7 @@ export const CANADIAN_CONTRACTORS: ContractorProfile[] = [
       status: 'Verified Business'
     },
     phone: '(204) 555-0122',
-    email: 'build@buildershuas.com',
+    email: 'build@buildershaus.com',
     website: 'https://sprayinsulations.ca/contractors/prairie-foam-masters-winnipeg',
     address: '1420 Clarence Ave',
     city: 'Winnipeg',

@@ -213,8 +213,8 @@ export function App() {
     setLeads(prev => [newLead, ...prev]);
     addToast(
       'success',
-      'Inquiry Dispatched Successfully!',
-      `Thank you ${newLead.fullName}. Your ${newLead.serviceNeeded || newLead.serviceCategory || 'insulation'} project in ${newLead.city ? `${newLead.city}, ` : ''}${newLead.province} has been logged and dispatched to build@buildershuas.com.`
+      'Inquiry Saved Locally',
+      `Thank you ${newLead.fullName}. Your ${newLead.serviceNeeded || newLead.serviceCategory || 'insulation'} project in ${newLead.city ? `${newLead.city}, ` : ''}${newLead.province} has been saved in this browser. No email was sent. To contact the team, email build@buildershaus.com.`
     );
   };
 
