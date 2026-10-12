@@ -50,7 +50,7 @@ export const GuestPostView: React.FC<GuestPostViewProps> = ({ onSaveSubmission, 
       content: formData.content,
       authorBio: formData.authorBio,
       feeAcknowledged: formData.feeAcknowledged,
-      status: 'Submitted'
+      status: 'Draft'
     };
 
     onSaveSubmission(submission);
@@ -148,10 +148,10 @@ export const GuestPostView: React.FC<GuestPostViewProps> = ({ onSaveSubmission, 
                 <CheckCircle2 className="w-10 h-10" />
               </div>
               <h2 className="text-2xl font-bold text-white font-display">
-                Guest Post Submission Received
+                Guest Post Draft Saved Locally
               </h2>
               <p className="text-slate-300 text-sm max-w-lg mx-auto leading-relaxed">
-                Thank you, <strong>{formData.authorName}</strong> ({formData.companyName}). Your submission <em>"{formData.articleTitle}"</em> has been logged for editorial review. Editorial notices will be sent to <strong>{formData.email}</strong> and dispatched to <span className="text-amber-400">{PRIMARY_CONTACT_EMAIL}</span>.
+                Thank you, <strong>{formData.authorName}</strong> ({formData.companyName}). Your draft <em>"{formData.articleTitle}"</em> is saved in this browser session. It was not sent for editorial review, no email was sent, and no fee was charged.
               </p>
               <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-400 max-w-md mx-auto text-left space-y-1">
                 <div><strong>Submission Fee:</strong> $10 CAD (Billed upon editorial acceptance)</div>
@@ -357,7 +357,7 @@ export const GuestPostView: React.FC<GuestPostViewProps> = ({ onSaveSubmission, 
                     className="mt-0.5 w-4 h-4 rounded border-slate-700 text-amber-500 focus:ring-amber-500"
                   />
                   <span className="text-xs text-slate-300 leading-snug">
-                    I understand there is a <strong>$10 CAD editorial processing fee</strong> for guest post publication upon editorial review approval. I acknowledge that SprayInsulations.ca does not guarantee search engine rankings or traffic.
+                    I understand that an accepted guest post may have a <strong>$10 CAD editorial processing fee</strong>. This form only saves a local draft; it does not submit the article or charge a fee.
                   </span>
                 </label>
               </div>
@@ -369,10 +369,10 @@ export const GuestPostView: React.FC<GuestPostViewProps> = ({ onSaveSubmission, 
                   className="w-full py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-sm shadow-xl shadow-amber-500/25 transition-all flex items-center justify-center gap-2 disabled:opacity-50"
                 >
                   <Send className="w-4 h-4" />
-                  <span>Submit Guest Post for Editorial Review ($10 CAD)</span>
+                  <span>Save Guest Post Draft Locally</span>
                 </button>
                 <p className="text-[11px] text-slate-400 text-center mt-2">
-                  Official correspondence routed to <span className="text-amber-400">{PRIMARY_CONTACT_EMAIL}</span>.
+                  This form does not send correspondence. For direct contact, email <a href={`mailto:${PRIMARY_CONTACT_EMAIL}`} className="text-amber-400 hover:underline">{PRIMARY_CONTACT_EMAIL}</a>.
                 </p>
               </div>
             </form>
