@@ -78,7 +78,7 @@ export const CityPartnershipView: React.FC<CityPartnershipViewProps> = ({
       calculatedAnnualFee: calculatedFee,
       interestReason: formData.interestReason,
       desiredStartDate: formData.desiredStartDate,
-      status: 'Pending Review'
+      status: 'Draft'
     };
 
     onSaveApplication(app);
@@ -264,9 +264,9 @@ export const CityPartnershipView: React.FC<CityPartnershipViewProps> = ({
             <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 mx-auto flex items-center justify-center">
               <CheckCircle2 className="w-10 h-10" />
             </div>
-            <h2 className="text-2xl font-bold text-white font-display">City Partnership Application Received</h2>
+            <h2 className="text-2xl font-bold text-white font-display">City Partnership Application Saved Locally</h2>
             <p className="text-slate-300 text-sm max-w-md mx-auto leading-relaxed">
-              Thank you, <strong>{formData.contactName}</strong> from <strong>{formData.businessName}</strong>. Your application for exclusivity in <strong>{formData.city}, {formData.province}</strong> (Calculated: ${calculatedFee} CAD/yr) is now in review. Confirmation dispatched to <span className="text-amber-400">{PRIMARY_CONTACT_EMAIL}</span>.
+              Thank you, <strong>{formData.contactName}</strong> from <strong>{formData.businessName}</strong>. Your application for <strong>{formData.city}, {formData.province}</strong> (Calculated: ${calculatedFee} CAD/yr) is saved in this browser session. No email was sent and the application was not submitted for review.
             </p>
             <div className="pt-4">
               <button
@@ -473,10 +473,10 @@ export const CityPartnershipView: React.FC<CityPartnershipViewProps> = ({
                 className="w-full py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-sm shadow-xl shadow-amber-500/25 transition-all flex items-center justify-center gap-2"
               >
                 <Send className="w-4 h-4" />
-                <span>REQUEST CITY PARTNERSHIP</span>
+                <span>SAVE APPLICATION LOCALLY</span>
               </button>
               <p className="text-[11px] text-slate-400 text-center mt-2">
-                All partnership applications sent directly to <span className="text-amber-400 font-medium">{PRIMARY_CONTACT_EMAIL}</span>.
+                This form saves to this browser only. To submit directly, email <a href={`mailto:${PRIMARY_CONTACT_EMAIL}`} className="text-amber-400 font-medium hover:underline">{PRIMARY_CONTACT_EMAIL}</a>.
               </p>
             </div>
           </form>

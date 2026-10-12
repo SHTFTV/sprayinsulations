@@ -213,56 +213,35 @@ export function App() {
     setLeads(prev => [newLead, ...prev]);
     addToast(
       'success',
-      'Inquiry Dispatched Successfully!',
-      `Thank you ${newLead.fullName}. Your ${newLead.serviceNeeded || newLead.serviceCategory || 'insulation'} project in ${newLead.city ? `${newLead.city}, ` : ''}${newLead.province} has been logged and dispatched to build@buildershuas.com.`
+      'Inquiry Saved Locally',
+      `Thank you ${newLead.fullName}. Your ${newLead.serviceNeeded || newLead.serviceCategory || 'insulation'} project in ${newLead.city ? `${newLead.city}, ` : ''}${newLead.province} has been saved in this browser. No email was sent. To contact the team, email build@buildershaus.com.`
     );
   };
 
   const handleSaveGuestPost = (newPost: GuestPostSubmission) => {
     setGuestPosts(prev => [newPost, ...prev]);
     addToast(
-      'success',
-      'Guest Post Proposal Submitted ($10 CAD)',
-      `"${newPost.articleTitle}" by ${newPost.authorName} has been queued for editorial review under Canadian building science standards.`
+      'info',
+      'Guest Post Draft Saved Locally',
+      `"${newPost.articleTitle}" by ${newPost.authorName} is saved in this browser. It was not sent for editorial review and no fee was charged.`
     );
   };
 
   const handleSaveMembership = (newMem: MembershipInquiry) => {
     setMemberships(prev => [newMem, ...prev]);
-    // Auto-add to directory
-    const newBiz: DirectoryBusiness = {
-      id: `biz-${Date.now()}`,
-      name: newMem.businessName,
-      category: (newMem.industry as any) || 'Insulation Contractor',
-      provinceCode: newMem.province,
-      city: newMem.city,
-      description: `Verified Canadian ${newMem.industry} member serving ${newMem.city}, ${newMem.province} and regional markets.`,
-      website: newMem.website || undefined,
-      isVerified: true,
-      isMember: true,
-      servesResidential: true,
-      servesCommercial: true,
-      servesIndustrial: false,
-      joinedYear: String(new Date().getFullYear())
-    };
-    setBusinesses(prev => [newBiz, ...prev]);
     addToast(
-      'success',
-      'Industry Membership Registered ($10/Year)',
-      `Welcome ${newMem.businessName}! Your business has been enrolled in the Canada-wide directory with official member standing.`
+      'info',
+      'Membership Application Saved Locally',
+      `${newMem.businessName}'s application is saved in this browser. No payment was taken, no membership was activated, and no directory listing was created.`
     );
   };
 
   const handleSaveCityPartnership = (newApp: CityPartnershipApplication) => {
     setCityPartnerships(prev => [newApp, ...prev]);
-    // Update city status to PENDING
-    setCities(prev => prev.map(c => 
-      c.name.toLowerCase() === newApp.city.toLowerCase() ? { ...c, partnershipStatus: 'PENDING' } : c
-    ));
     addToast(
-      'success',
-      'Exclusive City Partnership Application Received',
-      `Application for ${newApp.city}, ${newApp.province} ($${newApp.calculatedAnnualFee.toLocaleString()} CAD/yr) is under exclusivity review.`
+      'info',
+      'City Partnership Application Saved Locally',
+      `The application for ${newApp.city}, ${newApp.province} ($${newApp.calculatedAnnualFee.toLocaleString()} CAD/yr) is saved in this browser. It was not submitted for review.`
     );
   };
 
@@ -270,17 +249,17 @@ export function App() {
     setMarketingInquiries(prev => [newInq, ...prev]);
     addToast(
       'info',
-      'Marketing Inquiry Received',
-      `Thank you ${newInq.contactName}. The Industry Army Marketing team for SprayInsulations.ca will be in touch shortly.`
+      'Marketing Inquiry Saved Locally',
+      `Thank you ${newInq.contactName}. The inquiry is saved in this browser. No email was sent and the marketing team was not contacted.`
     );
   };
 
   const handleSaveTestimonial = (newTestimonial: Testimonial) => {
     setTestimonials(prev => [newTestimonial, ...prev]);
     addToast(
-      'success',
-      'Verified Review Published',
-      `Thank you ${newTestimonial.authorName}! Your 5-star review has been published with live Schema.org Review structured data.`
+      'info',
+      'Review Draft Saved Locally',
+      `Thank you ${newTestimonial.authorName}. The review is saved in this browser for moderation. It was not verified or published.`
     );
   };
 

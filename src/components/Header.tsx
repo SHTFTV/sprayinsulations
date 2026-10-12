@@ -87,7 +87,7 @@ export const Header: React.FC<HeaderProps> = ({
             </span>
           </div>
           <div className="flex items-center gap-4 text-slate-400">
-            <span className="hidden md:inline">Primary Inquiries: <a href="mailto:build@buildershuas.com" className="text-amber-400 hover:underline">build@buildershuas.com</a></span>
+            <span className="hidden md:inline">Primary Inquiries: <a href="mailto:build@buildershaus.com" className="text-amber-400 hover:underline">build@buildershaus.com</a></span>
             <button 
               id="header-industry-portal-link"
               onClick={() => handleNavClick('membership')}

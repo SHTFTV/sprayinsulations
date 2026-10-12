@@ -139,8 +139,8 @@ export const Testimonials: React.FC<TestimonialsProps> = ({
       reviewText: formData.reviewText.trim(),
       date: new Date().toISOString().split('T')[0],
       projectType: formData.projectType.trim() || 'Building Envelope Project',
-      verified: true,
-      published: true
+      verified: false,
+      published: false
     };
 
     if (onAddTestimonial) {
@@ -363,7 +363,7 @@ export const Testimonials: React.FC<TestimonialsProps> = ({
             <div className="space-y-1">
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-semibold">
                 <MessageSquarePlus className="w-3.5 h-3.5" />
-                <span>Submit Verified Experience</span>
+                <span>Save Review Draft</span>
               </div>
               <h3 className="text-xl font-bold text-white font-display">
                 Add Canadian Project Testimonial
@@ -376,9 +376,9 @@ export const Testimonials: React.FC<TestimonialsProps> = ({
             {formSubmitted ? (
               <div className="p-8 rounded-2xl bg-slate-950 border border-emerald-500/30 text-center space-y-3">
                 <CheckCircle2 className="w-12 h-12 text-emerald-400 mx-auto" />
-                <h4 className="text-lg font-bold text-white">Review Submitted Successfully</h4>
+                <h4 className="text-lg font-bold text-white">Review Draft Saved Locally</h4>
                 <p className="text-xs text-slate-300">
-                  Thank you! Your testimonial has been verified and added to the platform with corresponding Schema.org JSON-LD Review metadata.
+                  Thank you! Your testimonial is saved in this browser for moderation. It has not been verified, published, or added to structured data.
                 </p>
               </div>
             ) : (
@@ -534,7 +534,7 @@ export const Testimonials: React.FC<TestimonialsProps> = ({
                   type="submit"
                   className="w-full py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm shadow-xl shadow-amber-500/25 transition-all"
                 >
-                  Publish Verified Testimonial
+                  Save Review Draft Locally
                 </button>
               </form>
             )}

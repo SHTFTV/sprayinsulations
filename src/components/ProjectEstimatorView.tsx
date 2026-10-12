@@ -682,9 +682,9 @@ export const ProjectEstimatorView: React.FC<ProjectEstimatorViewProps> = ({
                   <div className="w-12 h-12 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto">
                     <CheckCircle2 className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-bold text-white">Planning Estimate Inquired Successfully!</h3>
+                  <h3 className="text-xl font-bold text-white">Planning Estimate Saved Locally</h3>
                   <p className="text-xs text-slate-300 max-w-md mx-auto">
-                    Your project details for {city}, {provinceCode} have been logged. A verified Canadian insulation contractor will reach out with itemized pricing.
+                    Your project details for {city}, {provinceCode} are saved in this browser session. No email was sent and no contractor was contacted.
                   </p>
                   <button
                     onClick={() => {
@@ -703,7 +703,7 @@ export const ProjectEstimatorView: React.FC<ProjectEstimatorViewProps> = ({
                       Lock In This Estimate: Request Formal Contractor Project Bids
                     </h3>
                     <p className="text-xs text-slate-400">
-                      Submit your planning parameters to receive verified contractor quotes in {city}, {provinceCode}.
+                      Save your planning parameters locally. This form does not request contractor quotes or send your details.
                     </p>
                   </div>
 
@@ -765,7 +765,7 @@ export const ProjectEstimatorView: React.FC<ProjectEstimatorViewProps> = ({
                       type="submit"
                       className="w-full sm:w-auto px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold rounded-xl transition text-xs shadow-lg shadow-amber-500/20"
                     >
-                      Submit for Verified Contractor Bids
+                      Save Estimate Inquiry Locally
                     </button>
                   </div>
                 </form>

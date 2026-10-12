@@ -45,7 +45,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onSaveMembership
       province: formData.province,
       city: formData.city,
       selectedPlan: formData.selectedPlan,
-      status: 'Received'
+      status: 'Draft'
     };
 
     onSaveMembership(inquiry);
@@ -128,7 +128,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onSaveMembership
             <span>Transparent Annual Terms</span>
           </div>
           <p>
-            Memberships are billed once per year at $10 CAD. An annual renewal notification is sent 30 days prior to expiration. Members may update profile information or cancel anytime with zero cancellation penalties.
+            Listed membership pricing is $10 CAD per year. This form does not take payment, activate a membership, send renewal notices, or create a directory listing.
           </p>
         </div>
 
@@ -150,9 +150,9 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onSaveMembership
             <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 mx-auto flex items-center justify-center">
               <CheckCircle2 className="w-10 h-10" />
             </div>
-            <h3 className="text-2xl font-bold text-white font-display">Membership Application Received</h3>
+            <h3 className="text-2xl font-bold text-white font-display">Membership Application Saved Locally</h3>
             <p className="text-slate-300 text-sm max-w-md mx-auto leading-relaxed">
-              Thank you, <strong>{formData.contactName}</strong> from <strong>{formData.businessName}</strong>. Your $10/year membership registration has been received. Onboarding instructions have been dispatched to <strong>{formData.email}</strong> and <span className="text-amber-400">{PRIMARY_CONTACT_EMAIL}</span>.
+              Thank you, <strong>{formData.contactName}</strong> from <strong>{formData.businessName}</strong>. Your application is saved in this browser session. No email was sent, no payment was taken, and no membership was activated.
             </p>
             <div className="pt-4 flex justify-center gap-3">
               <button
@@ -176,7 +176,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onSaveMembership
                 Business Membership Registration ($10/Year)
               </h2>
               <p className="text-xs text-slate-400 mt-1">
-                Provide your company details to activate your verified Canadian directory listing and member badge.
+                Save your company details locally as an application draft. Verification, payment, activation, and directory publication require separate review.
               </p>
             </div>
 
@@ -294,7 +294,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onSaveMembership
                 type="submit"
                 className="w-full py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm shadow-xl shadow-amber-500/25 transition-all flex items-center justify-center gap-2"
               >
-                <span>JOIN FOR $10 / YEAR</span>
+                <span>SAVE APPLICATION LOCALLY</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>

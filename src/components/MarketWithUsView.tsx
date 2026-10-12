@@ -131,9 +131,9 @@ export const MarketWithUsView: React.FC<MarketWithUsViewProps> = ({ onSaveInquir
             <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 mx-auto flex items-center justify-center">
               <CheckCircle2 className="w-10 h-10" />
             </div>
-            <h3 className="text-2xl font-bold text-white font-display">Marketing Inquiry Received</h3>
+            <h3 className="text-2xl font-bold text-white font-display">Marketing Inquiry Saved Locally</h3>
             <p className="text-slate-300 text-sm max-w-md mx-auto leading-relaxed">
-              Thank you, <strong>{formData.contactName}</strong> ({formData.companyName}). Our partnership desk has logged your request. Direct confirmation sent to <span className="text-amber-400">{PRIMARY_CONTACT_EMAIL}</span>.
+              Thank you, <strong>{formData.contactName}</strong> ({formData.companyName}). Your request is saved in this browser session. No email was sent and the partnership desk was not contacted.
             </p>
             <button
               onClick={() => setSubmitted(false)}
@@ -258,7 +258,7 @@ export const MarketWithUsView: React.FC<MarketWithUsViewProps> = ({ onSaveInquir
                 className="w-full py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm shadow-xl shadow-amber-500/25 transition-all flex items-center justify-center gap-2"
               >
                 <Send className="w-4 h-4" />
-                <span>MARKET WITH US</span>
+                <span>SAVE INQUIRY LOCALLY</span>
               </button>
               <p className="text-[11px] text-slate-400 text-center mt-2">
                 Official contact: <a href={`mailto:${PRIMARY_CONTACT_EMAIL}`} className="text-amber-400">{PRIMARY_CONTACT_EMAIL}</a>
