@@ -44,8 +44,6 @@ export const NewsSection: React.FC<NewsSectionProps> = ({
   const [selectedCategory, setSelectedCategory] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [expandedNewsId, setExpandedNewsId] = useState<string | null>(newsItems[0]?.id || null);
-  const [subscriberEmail, setSubscriberEmail] = useState('');
-  const [subscribeStatus, setSubscribeStatus] = useState<'idle' | 'success'>('idle');
 
   const categories = [
     'ALL',
@@ -68,16 +66,6 @@ export const NewsSection: React.FC<NewsSectionProps> = ({
   });
 
   const displayedItems = maxItems ? filteredItems.slice(0, maxItems) : filteredItems;
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!subscriberEmail || !subscriberEmail.includes('@')) return;
-    setSubscribeStatus('success');
-    setTimeout(() => {
-      setSubscriberEmail('');
-      setSubscribeStatus('idle');
-    }, 4500);
-  };
 
   const getCategoryBadgeClass = (category: string) => {
     switch (category) {
@@ -322,30 +310,18 @@ export const NewsSection: React.FC<NewsSectionProps> = ({
             </p>
           </div>
 
-          <form onSubmit={handleSubscribe} className="w-full md:w-auto flex flex-col sm:flex-row gap-2 shrink-0">
-            <input
-              type="email"
-              placeholder="Enter your email address..."
-              value={subscriberEmail}
-              onChange={(e) => setSubscriberEmail(e.target.value)}
-              required
-              className="px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white placeholder-slate-400 text-xs focus:outline-none focus:border-amber-500 w-full sm:w-64"
-            />
-            <button
-              type="submit"
+          <div className="w-full md:w-auto flex flex-col items-start md:items-end gap-2 shrink-0">
+            <p className="text-xs text-amber-100 max-w-sm md:text-right">
+              Online signup is not connected, and no email address is collected here.
+            </p>
+            <a
+              href="mailto:build@buildershaus.com?subject=Building%20Code%20%26%20Grant%20Alerts"
               className="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition-colors flex items-center justify-center gap-1.5 shrink-0"
             >
               <Send className="w-3.5 h-3.5" />
-              <span>Subscribe</span>
-            </button>
-          </form>
-
-          {subscribeStatus === 'success' && (
-            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-4 py-2 rounded-xl bg-emerald-500 text-slate-950 text-xs font-bold shadow-lg flex items-center gap-2 animate-bounce">
-              <CheckCircle2 className="w-4 h-4" />
-              <span>Subscribed! You will receive our next quarterly Canadian Building Science Bulletin.</span>
-            </div>
-          )}
+              <span>Ask About Updates</span>
+            </a>
+          </div>
         </div>
       )}
     </section>
