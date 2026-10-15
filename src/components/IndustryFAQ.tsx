@@ -309,15 +309,15 @@ export const IndustryFAQ: React.FC<IndustryFAQProps> = ({
             Have a Specific Municipal Code or Architectural Assembly Question?
           </span>
           <p className="text-slate-400">
-            Our building science network cross-references regional building officials, CCMC evaluation listings, and certified installers.
+            Send the site team a general inquiry. Project-specific code interpretation still belongs with the applicable authority and your qualified project professionals.
           </p>
         </div>
 
         <a
-          href="mailto:contact@sprayinsulations.ca?subject=Building%20Code%20Technical%20Question"
+          href="mailto:build@buildershaus.com?subject=SprayInsulations.ca%20Building%20Code%20Question"
           className="px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold whitespace-nowrap transition-colors flex items-center gap-1.5"
         >
-          <span>Ask Building Science Team</span>
+          <span>Send General Inquiry</span>
           <ExternalLink className="w-3.5 h-3.5" />
         </a>
       </div>
